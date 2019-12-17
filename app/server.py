@@ -9,10 +9,12 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+#export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://www.dropbox.com/s/0spw5ibh45v1nm2/export.pkl?raw=1'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+#https://www.dropbox.com/s/0spw5ibh45v1nm2/export.pkl?raw=1
+classes = ['-390', '-380', '-370', '-360', '-350', '-340', '-330', '-320', '-310', '-300', '-290', '-280', '-270', '-260', '-250', '-240', '-230', '-220', '-210', '-200', '-190', '-180', '-170', '-160', '-150', '-140', '-130', '-120', '-110', '-100', '-90', '-80', '-70', '-60', '-50', '-40', '-30', '-20', '-10', '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100', '110', '120', '130', '140', '150', '160', '170', '180', '190', '200', '210', '220', '230', '240', '250', '260', '270']
 path = Path(__file__).parent
 
 app = Starlette()
